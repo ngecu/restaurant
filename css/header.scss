@@ -1,0 +1,114 @@
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+ 
+  padding: 20px;
+} 
+
+.header{
+
+  position: relative;
+  top: 0;
+  width: 100vw;
+ 
+  text-align: center;
+  .Logo h1{
+      background: #ffc324;
+color: white;
+font-weight: 500;
+border: 0;
+border-radius: 0;
+text-transform: uppercase;
+font-size: 2rem;
+padding: 0.8rem 1.5rem;
+transform: skew(-2deg);
+display: inline-block;
+transition: all 0.5s;
+&[disabled] {
+  opacity: 0.5;
+}
+  }
+  hr.new2 {
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+    }
+    .nav{
+        text-align: center;
+        width: 100%;
+    }
+ul{
+  margin: 0;
+  padding: 0 10% 0 10%;
+  display: flex;
+  justify-self: end;
+  font-size: 2rem;
+
+  li{
+      list-style: none;
+      
+  }
+  a
+   {
+    padding: 1rem 3rem;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: .8em;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-weight: 800;
+    font-family: 'Acme', sans-serif;
+    @media (max-width: 700px) {
+      font-size: 10px;
+      padding: 0 10px;
+    }
+  
+    &:hover,
+    &:focus {
+      outline: none;
+      
+      &:after {
+        width: calc(100% - 60px);
+      }
+    }
+  }
+}  
+}
+.active{
+  background: red;
+}
+.container{
+  padding: 0 20%;
+}
